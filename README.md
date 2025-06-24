@@ -1,54 +1,19 @@
-# React + TypeScript + Vite
+# Supabase-Course
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is Supabase ?
+Supabase is called BaaS (Backend as a Service ) , it means that we can abstract  and FastTrack many of the tedious aspects of setting up your backend and instead focus on building an amazing client experience.
 
-Currently, two official plugins are available:
+--- 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- An example of another base is Firebase . However, Supabase has been getting very popular for its open-source approach, seamless integration with Postgress. and a developer friendly ecosystem that makes building, scaling, and securing your application easier than ever.
 
-## Expanding the ESLint configuration
+- Supabase is an alternative to Firebase & it's a great alternative to Firebase. It is known as a Backend as a Service , meaning that we actually don't have to build our own backend . Supabase will help develop everything for you. and Introduce you different methods and functions that you can call in your frontend  to actually execute functionality that we would normally have to serve through an endpoint that you build on your backend .
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+--- 
+# Role Level Security (RLS) Policies : 
+It is very important in supabase, because RLS protects your data by applying conditions to the queries in your table. i.e. we can restrict what kind of queries a user can make to your tables depending on what operation they are making , depending on their authentication status.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Depending on whatever condition you decide to write & These conditions are known as policies. 
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+ 
 ```
